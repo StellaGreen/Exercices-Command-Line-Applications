@@ -11,28 +11,28 @@ const userName = readlineSync.question('Puis-je avoir ton prénom ? ')//2eme que
     const age = Number(ageStr)
 
 switch (index) {
-  case 0:
+  case 0:   //Europe
     if (age >= 18) {
         console.log(`${userName} ${lastName}, vous êtes majeur, vous pouvez voter.`)
         } else {
             console.log(`Désolé, ${userName} ${lastName}, vous êtes mineur, vous ne pouvez pas voter.`)
         }
     break
-  case 1:
+  case 1:   //USA
     if (age >= 21) {
         console.log(`${userName} ${lastName}, vous êtes majeur, vous pouvez voter.`)
         } else {
             console.log(`Désolé, ${userName} ${lastName}, vous êtes mineur, vous ne pouvez pas voter.`)
         }
     break
-  case 2:
+  case 2:   //Corée du sud
     if (age >= 19) {
         console.log(`${userName} ${lastName}, vous êtes majeur, vous pouvez voter.`)
         } else {
             console.log(`Désolé, ${userName} ${lastName}, vous êtes mineur, vous ne pouvez pas voter.`)
         }
     break
-  case 3:
+  case 3:   //Nepal
     if (age >= 16) {
         console.log(`${userName} ${lastName}, vous êtes majeur, vous pouvez voter.`)
         } else {
@@ -40,5 +40,5 @@ switch (index) {
         }
     break
   default:
-        console/log(`je n'ai pas compris votre demande, veuillez réitérer`)
+        console/log(`Je n'ai pas compris votre demande, veuillez réitérer`)
 }
