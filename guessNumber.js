@@ -3,8 +3,6 @@ const chalk = require('chalk')
 
 
 
-// ---- PAS BESOIN DE LIRE CE CODE, IL EST PAS BON, J'AI PAS TROUVÉ COMMENT FAIRE J'ATTENDS LA CORRECTION POUR COMPRENDRE ----- //
-
 const nb = Number(readlineSync.question('Vous êtes le maître du jeux, choisissez un nombre entre 0 et 100 ? '))
 
 if( nb > 100){
