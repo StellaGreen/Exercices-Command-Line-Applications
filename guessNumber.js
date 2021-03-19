@@ -6,7 +6,7 @@ const chalk = require('chalk')
 const nb = Number(readlineSync.question('Vous êtes le maître du jeux, choisissez un nombre entre 0 et 100 ? '))
 
 if( nb > 100){
-    console.log(`Tout nombre au dessus de 100 n'est pas admis dans le jeu, veuillez recommencer.`)
+    console.log(chalk.red(`Tout nombre au dessus de 100 n'est pas admis dans le jeu, veuillez relancer le programme.`))
     process.exit(1)
 }
 
