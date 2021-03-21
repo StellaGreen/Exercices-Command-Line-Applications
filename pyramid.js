@@ -19,20 +19,20 @@ const showStars = (nbBase, str, reverse) => {
 } 
 // si rien n'est marqué au dela de l'argument 4 nous sortons du programe
 if (process.argv.length < 4) {
-  console.log(chalk.red(`usage: node stars.js number symbol (-r)`))
+  console.log(chalk.bgBlack.red(`usage: node stars.js number symbol (-r)`))
   process.exit(1)
   }
 
 //Verifier qu'il n'y a pas trop arguments passé à notre programme
     if (process.argv.length > 6) {
-    console.log(chalk.red('usage: node stars.js number symbol (-r)'))
+    console.log(chalk.bgBlack.red('usage: node stars.js number symbol (-r)'))
     process.exit(1)
     }
 
 
   // Verifier que l'argument passé à notre programme peut être converti en nombre
     if (isNaN(process.argv[2])) {
-    console.log(chalk.red(`Error: ${process.argv[2]} is not a number.`))
+    console.log(chalk.bgBlack.red(`Error: ${process.argv[2]} is not a number.`))
     process.exit(1)
     }
 

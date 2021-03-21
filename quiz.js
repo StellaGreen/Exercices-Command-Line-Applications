@@ -5,7 +5,7 @@ let note = 0    //note final
 
 //question 1
 let choix1 = ['langage','compilateur']  //je demande de choisir
-let index1 = readlineSync.keyInSelect(choix1, chalk.bgBlack('Question 1: Le C++ est un: '))
+let index1 = readlineSync.keyInSelect(choix1, chalk.bgBlack.yellow('Question 1: Le C++ est un: '))
 switch (index1) {
     case 0:
         console.log(chalk.green(`\nLa réponse 1 était bien attendu`))
@@ -20,7 +20,7 @@ switch (index1) {
 
 //question 2
 let choix2 = ['vrais','faux']   //je demande de choisir
-let index2 = readlineSync.keyInSelect(choix2, chalk.bgBlack('Question 2: TypeScript est une évolution de Javascript: '))
+let index2 = readlineSync.keyInSelect(choix2, chalk.bgBlack.yellow('Question 2: TypeScript est une évolution de Javascript: '))
 switch (index2) {
     case 0:
         console.log(chalk.green(`\nLa réponse 1 était bien attendu`))
@@ -35,7 +35,7 @@ switch (index2) {
 
 //question 3
 let choix3 = ['vrais','faux'] //je demande de choisir
-let index3 = readlineSync.keyInSelect(choix3, chalk.bgBlack('Question 3: Lire les cours avant de faire les exercices est inutile: '))
+let index3 = readlineSync.keyInSelect(choix3, chalk.bgBlack.yellow('Question 3: Lire les cours avant de faire les exercices est inutile: '))
 switch (index3) {
     case 0:
         console.log(chalk.red(`\nLa réponse 1 n'était pas la réponse attendu`))
@@ -50,7 +50,7 @@ switch (index3) {
 
 //question 4
 let choix4 = ['vrais','faux']   //je demande de choisir
-let index4 = readlineSync.keyInSelect(choix4, chalk.bgBlack('Question 4: react.js a été developpé par Google: '))
+let index4 = readlineSync.keyInSelect(choix4, chalk.bgBlack.yellow('Question 4: react.js a été developpé par Google: '))
 switch (index4) {
     case 0:
         console.log(chalk.red(`\nLa réponse 1 n'était pas la réponse attendu`))
@@ -65,7 +65,7 @@ switch (index4) {
 
 //question 5
 let choix5 = ['vrais','faux']   //je demande de choisir
-let index5 = readlineSync.keyInSelect(choix5, chalk.bgBlack('Question 5: Ethereum est une blockchain publique: '))
+let index5 = readlineSync.keyInSelect(choix5, chalk.bgBlack.yellow('Question 5: Ethereum est une blockchain publique: '))
 switch (index5) {
     case 0:
         console.log(chalk.green(`\nLa réponse 1 était bien attendu`))
@@ -79,11 +79,11 @@ switch (index5) {
 }
 console.log(chalk.yellowBright(`\nVous avez eus la note de ${note}/5\n`))
 if(note === 5){
-    console.log(chalk.green('Bravo!\n'))
+    console.log(chalk.bgBlack.green('\t Bravo ! \t\n'))
 }
 if(note === 4){
-    console.log(chalk.yellowBright('Dommage, pas loin !\n'))
+    console.log(chalk.bgBlack.yellowBright('Dommage, pas loin !\n'))
 }
 if(note < 4) {
-    console.log(chalk.red(`Relis les cours de Sofiane, prends des notes et bois un verre d'eau\n`))
+    console.log(chalk.bgBlack.red(` Relis les cours de Sofiane, prends des notes et bois un verre d'eau \n`))
 }
