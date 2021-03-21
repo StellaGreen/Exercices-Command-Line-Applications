@@ -4,7 +4,7 @@ let note = 0
 
 // Premiere question pour joueur 1
 var nb = Number(readlineSync.question(chalk.bgBlack.blueBright('\nVous êtes le maître du jeux, choisissez un nombre entre 0 et 100 ?  '), {
-    hideEchoBack: true // La réponse du maitre de jeux serra caché en étoile
+    hideEchoBack: true // La réponse du maitre de jeux caché grace a des étoiles
   }))
 
 // Si notre str n'est pas un nombre
